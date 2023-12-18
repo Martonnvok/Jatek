@@ -16,7 +16,7 @@ public class Jobbra extends Helyszin implements MasikIrany {
 
     @Override
     public Helyszin egyikIrany() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Északon nincs osztály."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Jobbra extends Helyszin implements MasikIrany {
 
     @Override
     public Helyszin masikIrany() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Délen nincs osztály."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
