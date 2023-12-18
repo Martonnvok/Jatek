@@ -1,6 +1,6 @@
 
 package jatekok;
 
-public class Helyszin {
-    
+public abstract class Helyszin {
+    public abstract String leiras();
 }
