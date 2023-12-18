@@ -9,4 +9,5 @@
 díszítő - decorate
 megfigyelő - observer
 
-A state design pattern alapján készül el a mozgás
+A state design pattern alapján készül el a mozgáss
+
