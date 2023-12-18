@@ -10,14 +10,12 @@ package jatekok;
  */
 public class MainForm extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MainForm
-     */
+    private Helyszin helyszin;
     public MainForm() {
         initComponents();
         
-        Start s = new Start();
-        jTextArea1.setText(s.leiras());
+        helyszin = new Start();
+        jTextArea1.setText(helyszin.leiras());
     }
 
     /**
@@ -82,8 +80,8 @@ public class MainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Kezdes k = new Kezdes();
-        jTextArea1.setText(k.leiras());
+        helyszin = helyszin.egyikIrany();
+        jTextArea1.setText(helyszin.leiras());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

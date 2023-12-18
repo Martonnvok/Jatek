@@ -8,4 +8,9 @@ public class Kezdes extends Helyszin {
         
         return "Ez a kezdés";
     }
+
+    @Override
+    public Helyszin egyikIrany() {
+        throw new UnsupportedOperationException("Nem tudjuk hova a kezdésoldalról ?"); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

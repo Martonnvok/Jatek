@@ -8,5 +8,11 @@ public class Start extends Helyszin {
         
         return "Ez a start";
     }
+
+    @Override
+    public Helyszin egyikIrany() {
+        return new Kezdes();
+    }
+    
     
 }
