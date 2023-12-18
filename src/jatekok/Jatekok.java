@@ -1,20 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package jatekok;
 
-/**
- *
- * @author somogyvari.m.peter
- */
+
 public class Jatekok {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Karakter karakter = new Karakter();
+
+        karakter.felvesz(new Targy("Fakard", "fakard leírás"), 2);
+        karakter.felvesz(new Targy("Bájital", "bájital Leírás"), 2);
+        karakter.felvesz(new Targy("Könyvek", "könyvek leírás"), 3);
+        System.out.println(karakter.toString());
+        karakter.hasznal("Fakard");
+        karakter.hasznal("Bájital", 2);
+        karakter.hasznal("Könyvek", 5, false);
+
+        System.out.println(karakter.toString());
     }
     
 }
