@@ -1,0 +1,2 @@
+# Hétfőn hiányoztam
+## Somopgyvári Márton
