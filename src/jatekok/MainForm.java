@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package jatekok;
 
-/**
- *
- * @author somogyvari.m.peter
- */
 public class MainForm extends javax.swing.JFrame {
 
     private Helyszin helyszin;
@@ -43,6 +35,11 @@ public class MainForm extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         jButton1.setText("másik irány");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("egyik irány");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +84,16 @@ public class MainForm extends javax.swing.JFrame {
         jTextArea1.insert(helyszin.leiras()+ "\n",0);
         
         jTextArea1.setCaretPosition(0);
+        
+        if (helyszin instanceof MasikIrany) {
+            jButton1.setVisible(true);
+            jButton1.setText(((MasikIrany)helyszin).masikBtnFelirat());
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

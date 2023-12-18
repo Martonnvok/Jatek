@@ -18,5 +18,5 @@ public class Start extends Helyszin {
     public String egyikBtnFelirat() {
        return "menj tovább!";
     }
-    
+
 }
